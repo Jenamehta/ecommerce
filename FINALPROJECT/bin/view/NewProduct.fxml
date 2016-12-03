@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewProductController">
+   <children>
+      <Label layoutX="73.0" layoutY="54.0" text="Enter Product Id : " />
+      <Label layoutX="50.0" layoutY="91.0" text="Enter Product Name : " />
+      <Label layoutX="25.0" layoutY="125.0" text="Enter Manufacturing Date : " />
+      <Label layoutX="77.0" layoutY="159.0" text="Enter Category : " />
+      <Label layoutX="98.0" layoutY="192.0" text="Enter Price : " />
+      <Label layoutX="77.0" layoutY="224.0" text="Enter Discount : " />
+      <Label layoutX="51.0" layoutY="258.0" text="Enter Total Quantity : " />
+      <Label layoutX="30.0" layoutY="292.0" text="Enter Available Quantity : " />
+      <TextField fx:id="id" layoutX="188.0" layoutY="50.0" promptText="Id" />
+      <TextField fx:id="name" layoutX="188.0" layoutY="87.0" promptText="Name" />
+      <TextField fx:id="category" layoutX="188.0" layoutY="155.0" promptText="Category" />
+      <TextField fx:id="price" layoutX="188.0" layoutY="188.0" promptText="Price" />
+      <TextField fx:id="discount" layoutX="188.0" layoutY="220.0" promptText="Discount" />
+      <TextField fx:id="totalQuantity" layoutX="188.0" layoutY="254.0" promptText="Total Quantity" />
+      <TextField fx:id="availableQuantity" layoutX="188.0" layoutY="288.0" promptText="Available Quantity" />
+      <Button fx:id="add" layoutX="188.0" layoutY="330.0" mnemonicParsing="false" onAction="#AddProductToDatabase" prefHeight="25.0" prefWidth="107.0" text="Add Product" />
+      <DatePicker fx:id="datePicker" layoutX="188.0" layoutY="121.0" prefHeight="25.0" prefWidth="149.0" promptText="Select Date" />
+      <Label fx:id="validProductId" layoutX="362.0" layoutY="54.0" />
+      <Label fx:id="validProductName" layoutX="362.0" layoutY="91.0" />
+      <Label fx:id="validCategory" layoutX="362.0" layoutY="159.0" />
+      <Label fx:id="validPrice" layoutX="362.0" layoutY="192.0" />
+      <Label fx:id="validDiscount" layoutX="362.0" layoutY="224.0" />
+      <Label fx:id="validTotalQuantity" layoutX="362.0" layoutY="258.0" />
+      <Label fx:id="validAvailableQuantity" layoutX="362.0" layoutY="292.0" />
+      <Label fx:id="validDate" layoutX="362.0" layoutY="125.0" />
+      <Button fx:id="backBtn" layoutX="325.0" layoutY="330.0" mnemonicParsing="false" onAction="#GoBackFunction" prefHeight="25.0" prefWidth="95.0" text="Go Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CartItemsController">
+   <children>
+      <TableView fx:id="cartProducts" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+        </columns>
+      </TableView>
+      <Button fx:id="placeOrder" layoutX="236.0" layoutY="222.0" mnemonicParsing="false" onAction="#GetOrderDetails" text="Place Your Order" />
+      <Label layoutX="14.0" layoutY="345.0" prefHeight="17.0" prefWidth="141.0" text="See Offers By Category : " />
+      <Button fx:id="detailsButton" layoutX="419.0" layoutY="340.0" mnemonicParsing="false" onAction="#ShowDetails" text="Get Details" />
+      <Label fx:id="errorLabel" layoutX="20.0" layoutY="312.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="567.0" />
+      <ComboBox fx:id="CategoryBox" layoutX="168.0" layoutY="340.0" prefHeight="27.0" prefWidth="161.0" />
+   </children>
+</AnchorPane>

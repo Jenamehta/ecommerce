@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPageController">
+   <children>
+      <Label layoutX="20.0" layoutY="29.0" text="Hello Admin," />
+      <Button fx:id="newProductBtn" layoutX="111.0" layoutY="24.0" mnemonicParsing="false" onAction="#AddNewProduct" text="Add New Product" />
+      <Label layoutX="20.0" layoutY="79.0" text="Product Id : " />
+      <TextField fx:id="productId" layoutX="112.0" layoutY="74.0" prefHeight="27.0" prefWidth="98.0" promptText="Id" />
+      <Button fx:id="deleteProduct" layoutX="237.0" layoutY="74.0" mnemonicParsing="false" onAction="#DeleteProduct" prefHeight="27.0" prefWidth="149.0" text="Delete Product" />
+      <Label fx:id="deletedLabel" layoutX="425.0" layoutY="201.0" />
+      <Label layoutX="14.0" layoutY="415.0" text="Enter Customer Id : " />
+      <TextField fx:id="customerId" layoutX="148.0" layoutY="410.0" prefHeight="25.0" prefWidth="149.0" promptText="Customer Id" />
+      <Button fx:id="seeFeedback" layoutX="330.0" layoutY="410.0" mnemonicParsing="false" onAction="#GetRecentFeedback" prefHeight="27.0" prefWidth="156.0" text="See Feedback" />
+      <Label fx:id="feedbackDesc" layoutX="50.0" layoutY="338.0" prefHeight="17.0" prefWidth="345.0" />
+      <Label fx:id="feedbackRating" layoutX="71.0" layoutY="288.0" prefHeight="17.0" prefWidth="179.0" />
+      <Button fx:id="logout" layoutX="466.0" layoutY="16.0" mnemonicParsing="false" onAction="#LogOutAdmin" prefHeight="27.0" prefWidth="111.0" text="LogOut" />
+      <TextField fx:id="updateProductId" layoutX="112.0" layoutY="119.0" prefHeight="27.0" prefWidth="98.0" promptText="Enter product Id" />
+      <TextField fx:id="updatedPrice" layoutX="297.0" layoutY="119.0" prefHeight="27.0" prefWidth="123.0" promptText="Enter Updated Price." />
+      <Button fx:id="updatePriceBtn" layoutX="437.0" layoutY="119.0" mnemonicParsing="false" onAction="#UpdateProducts" text="Update Price" />
+      <Label layoutX="20.0" layoutY="124.0" prefHeight="17.0" prefWidth="111.0" text="ProductId : " />
+      <Label layoutX="237.0" layoutY="124.0" text="Price : " />
+      <Label fx:id="errorMsg" layoutX="209.0" layoutY="369.0" />
+   </children>
+</AnchorPane>

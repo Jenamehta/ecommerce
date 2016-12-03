@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationController">
+   <children>
+      <Label layoutX="46.0" layoutY="31.0" text="Enter First Name : " />
+      <Label layoutX="46.0" layoutY="64.0" text="Enter Last Name : " />
+      <Label layoutX="46.0" layoutY="97.0" text="Enter Age : " />
+      <Label layoutX="46.0" layoutY="128.0" text="Enter Gender : " />
+      <Label layoutX="46.0" layoutY="159.0" text="Enter Address : " />
+      <Label layoutX="46.0" layoutY="192.0" text="Enter Email : " />
+      <Label layoutX="46.0" layoutY="226.0" text="Enter Phone No : " />
+      <Label layoutX="46.0" layoutY="261.0" text="Enter Username : " />
+      <Label layoutX="46.0" layoutY="297.0" text="Enter Password : " />
+      <TextField fx:id="input_first_name" layoutX="185.0" layoutY="27.0" prefHeight="25.0" prefWidth="214.0" promptText="firstName" />
+      <TextField fx:id="input_last_name" layoutX="185.0" layoutY="60.0" prefHeight="25.0" prefWidth="214.0" promptText="lastName" />
+      <TextField fx:id="input_age" layoutX="185.0" layoutY="93.0" prefHeight="25.0" prefWidth="214.0" promptText="age" />
+      <TextField fx:id="input_address" layoutX="185.0" layoutY="156.0" prefHeight="25.0" prefWidth="214.0" promptText="address" />
+      <TextField fx:id="input_email" layoutX="185.0" layoutY="190.0" prefHeight="25.0" prefWidth="214.0" promptText="email" />
+      <TextField fx:id="input_phone" layoutX="185.0" layoutY="223.0" prefHeight="25.0" prefWidth="214.0" promptText="phoneNo" />
+      <TextField fx:id="input_username" layoutX="185.0" layoutY="258.0" prefHeight="25.0" prefWidth="214.0" promptText="username" />
+      <PasswordField fx:id="input_password" layoutX="185.0" layoutY="294.0" prefHeight="25.0" prefWidth="214.0" promptText="password" />
+      <Button fx:id="submit" layoutX="258.0" layoutY="339.0" mnemonicParsing="false" onAction="#NewRegistration" text="Submit" />
+      <RadioButton fx:id="radioMale" layoutX="185.0" layoutY="128.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="radioFemale" layoutX="269.0" layoutY="128.0" mnemonicParsing="false" text="Female" />
+      <Label fx:id="validFname" layoutX="408.0" layoutY="31.0" />
+      <Label fx:id="validLname" layoutX="408.0" layoutY="64.0" />
+      <Label fx:id="validAge" layoutX="408.0" layoutY="97.0" />
+      <Label fx:id="validAddress" layoutX="408.0" layoutY="159.0" />
+      <Label fx:id="validEmail" layoutX="408.0" layoutY="192.0" />
+      <Label fx:id="validPhone" layoutX="408.0" layoutY="226.0" />
+      <Label fx:id="validUsername" layoutX="408.0" layoutY="262.0" />
+      <Label fx:id="validPassword" layoutX="408.0" layoutY="297.0" />
+   </children>
+</AnchorPane>

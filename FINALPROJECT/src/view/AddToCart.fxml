@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddToCartController">
+   <children>
+      <TableView fx:id="ProductsTable" prefHeight="289.0" prefWidth="600.0">
+        <columns>
+        </columns>
+      </TableView>
+      <TextField fx:id="productId" layoutX="159.0" layoutY="302.0" prefHeight="27.0" prefWidth="149.0" promptText="ProductId" />
+      <Label layoutX="23.0" layoutY="307.0" text="Enter Product Id : " />
+      <Button fx:id="addToCart" layoutX="320.0" layoutY="302.0" mnemonicParsing="false" onAction="#AddProductToCart" text="Add To Cart" />
+      <Button fx:id="goToCart" layoutX="470.0" layoutY="339.0" mnemonicParsing="false" onAction="#SeeProductsCart" text="Go To Cart" />
+      <Label layoutX="23.0" layoutY="344.0" text="Enter Product Id : " />
+      <TextField fx:id="deleteFromCart" layoutX="159.0" layoutY="339.0" prefHeight="25.0" prefWidth="149.0" promptText="ProductId" />
+      <Button fx:id="deleteBtn" layoutX="320.0" layoutY="339.0" mnemonicParsing="false" onAction="#DeleteProductFromCart" text="Delete From Cart" />
+      <Label fx:id="productLabel" layoutX="331.0" layoutY="172.0" prefHeight="17.0" prefWidth="240.0" />
+      <Label fx:id="errorMsgLabel" layoutX="371.0" layoutY="218.0" />
+   </children>
+</AnchorPane>

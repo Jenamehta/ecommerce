@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="695.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailsController">
+   <children>
+      <Label fx:id="greetUser" layoutX="101.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="190.0" />
+      <Label fx:id="placedOrder" layoutX="101.0" layoutY="70.0" prefHeight="17.0" prefWidth="265.0" />
+      <Label layoutX="31.0" layoutY="49.0" prefHeight="17.0" prefWidth="265.0" text="WE ARE SHIPPING YOUR DELIVERY TO: :" textFill="#363333" />
+      <Label fx:id="userAddress" layoutX="29.0" layoutY="72.0" prefHeight="117.0" prefWidth="334.0" />
+      <Label fx:id="totalBill" layoutX="94.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="493.0" />
+      <Button fx:id="logOut" layoutX="513.0" layoutY="31.0" mnemonicParsing="false" onAction="#LogOutCustomer" text="Logout" />
+      <Button fx:id="feedbackBtn" layoutX="17.0" layoutY="360.0" mnemonicParsing="false" onAction="#GiveFeedback" text="Give A Feedback" />
+      <Label layoutX="13.0" layoutY="448.0" text="NEW PASSWORD" />
+      <Button fx:id="updateAccount" layoutX="354.0" layoutY="443.0" mnemonicParsing="false" onAction="#UpdateAccount" prefHeight="27.0" prefWidth="167.0" text="Update Account" />
+      <PasswordField fx:id="updatePassword" layoutX="175.0" layoutY="443.0" promptText="New Password" />
+      <Label fx:id="passwordUpdatedLbl" layoutX="78.0" layoutY="373.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="307.0" />
+      <Label layoutX="16.0" layoutY="415.0" prefHeight="17.0" prefWidth="265.0" text="MODIFY YOUR PROFILE:" />
+      <Label layoutX="173.0" layoutY="502.0" prefHeight="17.0" prefWidth="343.0" text="THANK YOU!!. PROJECT SUBMITTED BY JENA MEHTA" textFill="#363333" />
+   </children>
+</AnchorPane>
